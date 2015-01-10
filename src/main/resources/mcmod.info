@@ -1,0 +1,16 @@
+[
+{
+  "modid": "themrgmod",
+  "name": "The Mr G Mod",
+  "description": "A mod mr g made to get back into modding..containing stuff he wanted (i am mrg ...why is he talking about himself in third person?.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Mr G Reaper"],
+  "credits": "my smal furry cat noodles who is always willing to give a meow and steal the mouse mat as a cat seat",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
