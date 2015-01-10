@@ -15,7 +15,7 @@ public class permissions {
         System.out.println("*             Jonathan Coulton - http://www.jonathancoulton.com/                   *");
         System.out.println("*             voltaire - http://www.voltaire.net/                                  *");
         System.out.println("* Thank you for allowing me to use your music, you are all awesome!                *");
-        if (!configInfo.RecordsEnabled){System.out.println("*      BUT YOU HAVE THEM DISABLED...WHY?                                           *");}
+        if (!configHandler.RecordsEnabled){System.out.println("*      BUT YOU HAVE THEM DISABLED...WHY?                                           *");}
         System.out.println("************************************************************************************");
     }
 }
