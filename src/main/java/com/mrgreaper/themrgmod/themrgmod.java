@@ -34,9 +34,7 @@ public class themrgmod {
         permissions.init();//lets give the artists thier well deserved credit!
         creativeTabs.init();//set up the creative tabs
         blocks.init(); //lets load our blocks
-        if (configInfo.RecordsEnabled){ records.init();} //load the records
-
-
+        if (configHandler.RecordsEnabled){ records.init();} //load the records
     }
 
     @Mod.EventHandler
