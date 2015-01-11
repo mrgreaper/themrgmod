@@ -11,6 +11,7 @@ public class configHandler {
 
     public static Configuration configuration;
     public static boolean RecordsEnabled = true;
+    public static boolean BunnysEnabled= true;
 
     public static void init(File configFile) {
         if (configuration == null) {
@@ -20,7 +21,9 @@ public class configHandler {
     }
 
     public static void loadConfiguration() {
-        RecordsEnabled = configuration.getBoolean("Are music records enabled? ",configuration.CATEGORY_GENERAL,RecordsEnabled," Enabling this option will mean that music from real artists will be added as records to the game (the artists have given me permission to do this), restart required");
+        RecordsEnabled = configuration.getBoolean("You like the music ? ",configuration.CATEGORY_GENERAL,RecordsEnabled," Enabling this option will mean that music from real artists will be added as records to the game (the artists have given me permission to do this), restart required");
+        BunnysEnabled = configuration.getBoolean("You want the bunnys right? ",configuration.CATEGORY_GENERAL,RecordsEnabled,"disabling this will disable all bunnys...why would you do that?");
+
         if (configuration.hasChanged()) {
             configuration.save();
         }
