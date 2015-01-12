@@ -10,11 +10,11 @@ public final class blocks {
 
     public static Block testBlock;
     public static Block blockSpeaky;
+    public static Block blockSparky;
 
     public static void init(){
         testBlock = new TestBlock();
         blockSpeaky = new blockSpeaky();
-
-
+        blockSparky = new blockSparky();
     }
 }
