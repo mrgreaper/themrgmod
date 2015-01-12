@@ -11,13 +11,13 @@ import net.minecraft.item.Item;
 /**
  * Created by david on 11/01/2015.
  */
-public class livingBunny extends Item{
-    private String name = "LivingBunny";
+public class energizedBunny extends Item {
+    private String name = "EnergizedBunny";
 
-    public livingBunny(){
+    public energizedBunny(){
         this.setCreativeTab(creativeTabs.theMrGModTabBunnys);
         this.setUnlocalizedName(name);
-        GameRegistry.registerItem(this,name);
+        GameRegistry.registerItem(this, name);
     }
 
     @SideOnly(Side.CLIENT)

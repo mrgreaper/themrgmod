@@ -12,7 +12,8 @@ import net.minecraft.item.Item;
 public class creativeTabs{
 
     public static CreativeTabs theMrGModTabRecords = new CreativeTabs("theMrGModTabRecords"){@Override public Item getTabIconItem(){return (Items.record_cat);}};
-    public static CreativeTabs theMrGModTabBunnys = new CreativeTabs("theMrgModTabBunnys") {@Override public Item getTabIconItem() {return (bunnys.livingBunny);}};
+    public static CreativeTabs theMrGModTabBunnys = new CreativeTabs("theMrgModTabBunnys") {@Override public Item getTabIconItem() {return (bunnys.deadBunny);}};
+    public static CreativeTabs theMrGModTabBlocks = new CreativeTabs("theMrGModTabBlocks") {@Override public Item getTabIconItem() {return (bunnys.deadBunny);}};
 
 
 

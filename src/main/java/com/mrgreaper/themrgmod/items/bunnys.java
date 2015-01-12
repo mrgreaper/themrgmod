@@ -8,12 +8,13 @@ import net.minecraft.item.Item;
 public class bunnys {
 
     public static Item livingBunny;
+    public static Item deadBunny;
+    public static Item energizedBunny;
 
     public static void init(){
         //all bunnys are registered here
         livingBunny = new livingBunny();
-
-
-
+        deadBunny = new deadBunny();
+        energizedBunny = new energizedBunny();
     }
 }
