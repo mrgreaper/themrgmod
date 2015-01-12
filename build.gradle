@@ -10,6 +10,7 @@ buildscript {
             url = "https://oss.sonatype.org/content/repositories/snapshots/"
         }
     }
+
     dependencies {
         classpath 'net.minecraftforge.gradle:ForgeGradle:1.2-SNAPSHOT'
     }
@@ -26,20 +27,26 @@ minecraft {
     runDir = "eclipse"
 }
 
+repositories {
+    maven {
+        name = "OpenComputers"
+        url = "http://maven.cil.li/"
+    }
+    maven {
+        name = "codechicken"
+        url = "http://chickenbones.net/maven"
+    }
+    ivy {
+        name "CoFHCore"
+        artifactPattern "http://addons.cursecdn.com/files/2221/835/[module]-[revision].[ext]"
+    }
+}
 dependencies {
-    // you may put jars on which you depend on in ./libs
-    // or you may define them like so..
-    //compile "some.group:artifact:version:classifier"
-    //compile "some.group:artifact:version"
-      
-    // real examples
-    //compile 'com.mod-buildcraft:buildcraft:6.0.8:dev'  // adds buildcraft to the dev env
-    //compile 'com.googlecode.efficient-java-matrix-library:ejml:0.24' // adds ejml to the dev env
-
-    // for more info...
-    // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
-    // http://www.gradle.org/docs/current/userguide/dependency_management.html
-
+    //compile 'codechicken:CodeChickenCore:1.7.10-1.0.4.29:dev'
+    //compile 'codechicken:NotEnoughItems:1.7.10-1.0.4.83:dev'
+    compile 'com.mod-buildcraft:buildcraft:6.3.1:dev'
+    compile 'li.cil.oc:OpenComputers:MC1.7.10-1.4.4.+:api'
+    compile name: 'CoFHCore', version: '[1.7.10]3.0.0B9-40-dev', ext: 'jar'
 }
 
 processResources
