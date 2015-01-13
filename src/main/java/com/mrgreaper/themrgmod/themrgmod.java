@@ -1,6 +1,7 @@
 package com.mrgreaper.themrgmod;
 
 import com.mrgreaper.themrgmod.blocks.blocks;
+import com.mrgreaper.themrgmod.entities.tileEntityHandler;
 import com.mrgreaper.themrgmod.items.bunnys;
 import com.mrgreaper.themrgmod.items.records;
 import com.mrgreaper.themrgmod.lib.*;
@@ -45,6 +46,7 @@ public class themrgmod {
         permissions.init();//lets give the artists thier well deserved credit!
         creativeTabs.init();//set up the creative tabs
         blocks.init(); //lets load our blocks
+        tileEntityHandler.init();//and register our tile entitys or they wont save lol
         if (configHandler.RecordsEnabled){
             records.init();} //load the records
         if (configHandler.BunnysEnabled){
